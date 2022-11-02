@@ -15,7 +15,7 @@
 		5233F5D129118BB800CD0AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5233F5CF29118BB800CD0AA7 /* LaunchScreen.storyboard */; };
 		5233F5DA29118BE300CD0AA7 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 5233F5D929118BE300CD0AA7 /* SpringAnimation */; };
 		5233F5DC291190F800CD0AA7 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233F5DB291190F800CD0AA7 /* DataStore.swift */; };
-		5233F5DE291192FA00CD0AA7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233F5DD291192FA00CD0AA7 /* Model.swift */; };
+		5233F5DE291192FA00CD0AA7 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233F5DD291192FA00CD0AA7 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		5233F5D029118BB800CD0AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5233F5D229118BB800CD0AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5233F5DB291190F800CD0AA7 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		5233F5DD291192FA00CD0AA7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5233F5DD291192FA00CD0AA7 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		5290FA542912FF3D00B233E6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5233F5DD291192FA00CD0AA7 /* Model.swift */,
+				5233F5DD291192FA00CD0AA7 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5233F5DE291192FA00CD0AA7 /* Model.swift in Sources */,
+				5233F5DE291192FA00CD0AA7 /* Animation.swift in Sources */,
 				5233F5C929118BB700CD0AA7 /* ViewController.swift in Sources */,
 				5233F5DC291190F800CD0AA7 /* DataStore.swift in Sources */,
 				5233F5C529118BB700CD0AA7 /* AppDelegate.swift in Sources */,
@@ -345,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RT53XMPLTN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -377,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RT53XMPLTN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimationApp/Info.plist;
+				INFOPLIST_FILE = AnimationApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
