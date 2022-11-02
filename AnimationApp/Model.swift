@@ -8,15 +8,24 @@
 import Foundation
 import SpringAnimation
 
-struct Animationnnn {
-//    let animation: String
-//    let curve: String
+struct Animation {
     
-    func getAnimation() -> String {
-        DataStore.shared.animationsNames.randomElement() ?? ""
-    }
+    let animationName: String
+    let curveName: String
+    let force: Double
+    let duration: Double
+    let delay: Double
     
-    func getCurve() -> String {
-        DataStore.shared.curvesNames.randomElement() ?? ""
+    static func getAnimation() -> Animation {
+        let animationDS = DataStore.shared
+        
+        let animation = Animation(
+            animationName: animationDS.animationsNames.randomElement() ?? "",
+            curveName: animationDS.curvesNames.randomElement() ?? "",
+            force: Double.random(in: 0.5...2.5),
+            duration: Double.random(in: 0.5...1.5),
+            delay: Double.random(in: 0.3...0.8)
+        )
+        return animation
     }
 }
