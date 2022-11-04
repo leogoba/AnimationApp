@@ -9,17 +9,17 @@ import UIKit
 import SpringAnimation
 
 class ViewController: UIViewController {
-
-    var animation = Animation.getAnimation()
     
     @IBOutlet var springView: SpringView!
-    @IBOutlet var springButtonLabel: SpringButton!
+    @IBOutlet var springButtonLabel: UIButton!
     
     @IBOutlet var presetLabel: UILabel!
     @IBOutlet var curveLabel: UILabel!
     @IBOutlet var forceLabel: UILabel!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
+    
+    private var animation = Animation.getAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
