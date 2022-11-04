@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DataStore {
+class DataStore {
     
     static let shared = DataStore()
     

@@ -10,49 +10,41 @@ import SpringAnimation
 
 class ViewController: UIViewController {
     
+    //MARK: - IB Outlets
     @IBOutlet var springView: SpringView!
     @IBOutlet var springButtonLabel: UIButton!
+    @IBOutlet var animationLabel: UILabel! {
+        didSet {
+            animationLabel.text = animation.description
+        }
+    }
     
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
+    //MARK: - Private Properties
+    private var animation = Animation.getRandomAnimation()
     
-    private var animation = Animation.getAnimation()
-    
+    //MARK: - Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateLabels()
-        
         springView.layer.cornerRadius = 15
         springButtonLabel.layer.cornerRadius = 15
     }
     
+    //MARK: - IB Actions
     @IBAction func springButton() {
+        animationLabel.text = animation.description
         getRandomValuesAndAnimation()
         springView.animate()
-        updateLabels()
-        
-        animation = Animation.getAnimation()
-        
-        springButtonLabel.setTitle("Run " + animation.animationName, for: .normal)
+        animation = Animation.getRandomAnimation()
+        springButtonLabel.setTitle("Run " + animation.name, for: .normal)
     }
     
+    //MARK: - Private Methods
     private func getRandomValuesAndAnimation() {
         springView.force = animation.force
         springView.duration = animation.duration
         springView.delay = animation.delay
-        springView.animation = animation.animationName
-        springView.curve = animation.curveName
-    }
-    
-    private func updateLabels() {
-        presetLabel.text = "preset: \(animation.animationName)"
-        curveLabel.text = "curve: \(animation.curveName)"
-        forceLabel.text = "force: \(String(format: "%.2f", animation.force))"
-        durationLabel.text = "duration: \(String(format: "%.2f", animation.duration))"
-        delayLabel.text = "delay: \(String(format: "%.2f", animation.delay))"
+        springView.animation = animation.name
+        springView.curve = animation.curve
     }
 }
 

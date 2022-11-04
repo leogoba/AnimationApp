@@ -32,47 +32,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xz5-Kj-Jbg" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="30" y="30" width="260" height="124"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="beg-tf-mCj">
-                                        <rect key="frame" x="15" y="5" width="68" height="114"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPc-DY-08E">
-                                                <rect key="frame" x="0.0" y="0.0" width="68" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHh-ef-6c2">
-                                                <rect key="frame" x="0.0" y="23.5" width="68" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4m-EK-9Hi">
-                                                <rect key="frame" x="0.0" y="47" width="68" height="20"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4m-7P-oA0">
-                                                <rect key="frame" x="0.0" y="70" width="68" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hb-aW-8Lu">
-                                                <rect key="frame" x="0.0" y="93.5" width="68" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhY-xZ-cRg">
+                                        <rect key="frame" x="8" y="8" width="244" height="108"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="beg-tf-mCj" secondAttribute="bottom" constant="5" id="4UI-Wo-Jsp"/>
-                                    <constraint firstItem="beg-tf-mCj" firstAttribute="top" secondItem="xz5-Kj-Jbg" secondAttribute="top" constant="5" id="Ey0-LG-cIq"/>
-                                    <constraint firstItem="beg-tf-mCj" firstAttribute="leading" secondItem="xz5-Kj-Jbg" secondAttribute="leading" constant="15" id="YJ4-sD-a0u"/>
+                                    <constraint firstItem="JhY-xZ-cRg" firstAttribute="top" secondItem="xz5-Kj-Jbg" secondAttribute="top" constant="8" id="1kj-cC-f1V"/>
+                                    <constraint firstItem="JhY-xZ-cRg" firstAttribute="leading" secondItem="xz5-Kj-Jbg" secondAttribute="leading" constant="8" id="C8p-Sn-j3Q"/>
+                                    <constraint firstAttribute="bottom" secondItem="JhY-xZ-cRg" secondAttribute="bottom" constant="8" id="Iz8-MW-sE2"/>
+                                    <constraint firstAttribute="trailing" secondItem="JhY-xZ-cRg" secondAttribute="trailing" constant="8" id="Vtu-OO-p2h"/>
                                     <constraint firstAttribute="width" secondItem="xz5-Kj-Jbg" secondAttribute="height" multiplier="65:31" id="jj8-GE-wIN"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -95,11 +67,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="nHh-ef-6c2" id="sNq-e4-Acl"/>
-                        <outlet property="delayLabel" destination="0hb-aW-8Lu" id="H1C-sW-Lns"/>
-                        <outlet property="durationLabel" destination="a4m-7P-oA0" id="wNK-Qg-4ef"/>
-                        <outlet property="forceLabel" destination="c4m-EK-9Hi" id="wP0-7i-7XE"/>
-                        <outlet property="presetLabel" destination="LPc-DY-08E" id="DpJ-js-uy8"/>
+                        <outlet property="animationLabel" destination="JhY-xZ-cRg" id="YnA-Wj-cLz"/>
                         <outlet property="springButtonLabel" destination="xR6-OF-5eX" id="Aoy-us-lL1"/>
                         <outlet property="springView" destination="xz5-Kj-Jbg" id="fZO-hr-Caj"/>
                     </connections>
